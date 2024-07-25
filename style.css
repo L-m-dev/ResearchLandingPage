@@ -1,0 +1,108 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    background-color: rgb(27, 27, 37);
+}
+.container{
+    width:70%;
+    margin: auto;
+    height: 900px;
+    display:flex;
+    background-color: white;
+}
+.image{
+    width: 35%;
+    background-image: url('./ocean.jpg');
+    background-size: 400%;
+    background-position-y: 30%;
+    object-fit: contain;
+    display: flex;
+    align-items: center;
+}
+.content{
+     width: 65%;
+}
+
+.content{
+    justify-content: start;
+    gap:40px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 150px;
+    padding-left: 40px;
+    
+}
+
+.text{
+    
+  position: relative;
+  max-inline-size: 55ch;
+     font-size: 1.2em;
+}
+
+.text>p:first-child{
+    font-size: 1.3em;
+}
+
+form{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    gap:30px;
+
+}
+
+ .left-side>p  , .right-side>p{
+    font-size: 0.7em;
+     padding:10px;   
+ }
+
+ form>p{
+    font-size: 1.2em;
+    padding-left: 10px;
+ }
+
+ .logo{
+    width: 100%;
+    height: 150px;
+    background-color: rgb(255,255,255,0.3);
+    position: relative;
+    top: -20%;
+    display: flex;
+    place-content: center;
+    align-items: center;
+    color:rgb(0, 0, 0);
+    letter-spacing: 2px;
+    font-size: 2.1rem;
+     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ }
+
+ #create{
+    margin:20px;
+    padding:10px;
+    width: 180px;
+    background-color: green;
+    color:white;
+
+ }
+
+
+ #bottom-text{
+    padding:10px;
+    font-size: 1em;
+ }
+ #log-in{
+    color:rgb(51, 78, 11);
+ }
+
+
+ input:invalid{
+    background-color: rgb(247, 174, 174);
+ }
+
+ input:focus{
+     border:4px solid rgb(180, 180, 252);
+ }
